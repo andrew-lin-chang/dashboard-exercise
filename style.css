@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    font-family: 'Poppins', sans-serif;
+    --sage: #A0C49D;
+    --pastel: #C4D7B2;
+    --light-pastel: #E1ECC8;
+    --cream: #F7FFE5;
+}
+
+body {
+    background: var(--cream);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.search {
+    background: var(--pastel);
+    width: 500px;
+    height: 30px;
+    border-radius: 20px;
+}
+
+.pfp {
+    background: var(--pastel);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+.card {
+    height: 100px;
+    width: 100px;
+    background: var(--light-pastel);
+    border: 1px solid black;
+}
+
+.news.card, .profile.card {
+    height: 50px;
+    width: 200px;
+}
+
+.board {
+    display: grid; 
+    grid-template-columns: 2fr 1fr;
+}
+
+.projects {
+    display: grid;
+}

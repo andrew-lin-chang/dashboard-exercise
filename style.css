@@ -11,6 +11,7 @@
 body {
     background: var(--cream);
     margin: 0;
+    box-sizing: border-box;
 }
 
 .title {
@@ -31,6 +32,7 @@ body {
     border-bottom-right-radius: 40px;
     padding-left: 10%;
     height: 100vh;
+    color: var(--cream);
 }
 
 .menu, .controls{
@@ -44,28 +46,53 @@ body {
 
 .navbar, .header {
     display: flex;
-    justify-content: center;
     align-items: center;
     grid-column: 2/-1;
     grid-row: 1/2;
+    gap: 20px;
+    padding: 20px;
+}
+
+.navbar {
+    justify-content: space-between;
 }
 
 .header {
     grid-row: 2/3;
+
+    #pfp {
+        width: 60px;
+        height: 60px;
+    }
+
+    .name {
+        flex: 1;
+    }
+}
+
+button {
+    border: 0;
+    background: var(--sage);
+    border-radius: 10px;
+    height: 2rem;
+    width: 4rem;
+    color: var(--cream);
 }
 
 .search {
     background: var(--pastel);
-    width: 500px;
     height: 30px;
     border-radius: 20px;
+    border: 0;
+    flex: 1;
+    text-indent: 20px;
 }
 
-.pfp {
-    background: var(--pastel);
+#pfp {
     border-radius: 50%;
     width: 30px;
     height: 30px;
+    object-fit: cover;
 }
 
 .card {
@@ -76,7 +103,7 @@ body {
 
 .news.card, .profile.card {
     height: 50px;
-    width: 100px;
+    width: 200px;
 }
 
 .board {
@@ -122,3 +149,6 @@ body {
   color: var(--cream);
 }
 
+#search-icon, #notifs-icon {
+    color: var(--sage);
+}
